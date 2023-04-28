@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <div>
+        <div style="width: 40%;margin: 0 auto">
+            <h2>
+                Escríbenos !!!
+            </h2>
+            <div class="resultado" style="color:green;font-style: italic"></div>
+            <form id="formulario">
+                <div>
+                    <div style="display: flex;flex-direction: column;">
+                        <label>
+                            Nombre completo
+                        </label>
+                        <input id="nombre" type="text">
+                        <p class="errorNombre" style="color:red;font-style: italic;"></p>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <label>
+                            Asunto
+                        </label>
+                        <input id="asunto" type="text">
+                        <p class="errorAsunto" style="color:red;font-style: italic;"></p>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <label>
+                        Mensaje
+                    </label>
+                    <textarea id="mensaje"></textarea>
+                    <p class="errorMensaje" style="color:red;font-style: italic;"></p>
+                </div>
+                <div>
+                    <button id="botton" type="submit">
+                        Envíar mensaje
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        // 
+        // SELECCIONAR ELEMENTOS DEL DOM
+        const form = document.getElementById('formulario')
+        const inputName = document.getElementById('nombre')
+        const inputSubject = document.getElementById('asunto')
+        const inputMessage = document.getElementById('mensaje')
+        // const btnSend = document.getElementById('botton')
+        // const regExpLiteral = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+
+        // FUNCIONES ENCARGADAS DE GENERAR FILTROS
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const validateName = () => {
+                const inputName = document.getElementById('nombre').value
+                const p = document.getElementsByClassName('errorNombre')
+                const regExpLiteral = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+
+                if (regExpLiteral.test(inputName)) {
+                    console.log(inputName)
+                } else {
+                    const alert = `${inputName} no es un nombre valido`
+                    p[0].textContent = alert
+                    console.log(p)
+                }
+            }
+
+            const validateSubject = () => {
+                const inputSubject = document.getElementById('asunto').value
+                const p = document.getElementsByClassName('errorAsunto')
+                const regExpLiteral = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+
+                if (regExpLiteral.test(inputSubject)) {
+                    console.log(inputSubject)
+                } else {
+                    const alert = `${inputSubject} no es un asunto valido`
+                    p[0].textContent = alert
+                    console.log(p)
+                }
+            }
+
+            const validateMessagge = () => {
+                const inputMessage = document.getElementById('mensaje').value
+                const p = document.getElementsByClassName('errorMensaje')
+                const regExpLiteral = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+
+                if (regExpLiteral.test(inputMessage)) {
+                    console.log(inputMessage)
+                } else {
+                    const alert = `${inputMessage} no es un mensaje valido`
+                    p[0].textContent = alert
+                    console.log(p)
+                }
+            }
+
+            const sendForm = () => {
+                const result = document.getElementsByClassName('resultado')[0]
+                const p = document.createElement('p')
+                p.innerText = "Mensaje enviado con éxito"
+                result.appendChild(p)
+            }
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault()
+                sendForm()
+            })
+
+            inputName.addEventListener('input', () => validateName())
+            inputSubject.addEventListener('input', () => validateSubject())
+            inputMessage.addEventListener('input', () => validateMessagge())
+
+        })
+
+
+    </script>
+</body>
+
+</html>
