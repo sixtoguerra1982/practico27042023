@@ -65,14 +65,17 @@
                 const regExpLiteral = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
 
                 if (regExpLiteral.test(inputName)) {
-                    // document.getElementById('nombre').value = ""
-                    // document.getElementById("informacion").style.display="block";
                     p[0].style.display = 'none'
                 } else {
-                    const alert = `${inputName} no es un nombre valido`
-                    p[0].style.display = 'block'
-                    p[0].textContent = alert
-                    console.log(p)
+                    if (inputName.length > 0) {
+                        const alert = `${inputName} no es un nombre valido`
+                        p[0].textContent = alert
+                        console.log(p)
+                        p[0].style.display = 'block'
+                    } else {
+                        p[0].style.display = 'none'
+                    }
+
                 }
             }
 
@@ -82,12 +85,19 @@
                 const regExpLiteral = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
 
                 if (regExpLiteral.test(inputSubject)) {
-                    console.log(inputSubject)
+                    p[0].style.display = 'none'
                 } else {
-                    const alert = `${inputSubject} no es un asunto valido`
-                    p[0].textContent = alert
-                    console.log(p)
+                    if (inputSubject.length > 0) {
+                        const alert = `${inputSubject} no es un nombre valido`
+                        p[0].textContent = alert
+                        console.log(p)
+                        p[0].style.display = 'block'
+                    } else {
+                        p[0].style.display = 'none'
+                    }
+
                 }
+
             }
 
             const validateMessagge = () => {
@@ -96,11 +106,17 @@
                 const regExpLiteral = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
 
                 if (regExpLiteral.test(inputMessage)) {
-                    console.log(inputMessage)
+                    p[0].style.display = 'none'
                 } else {
-                    const alert = `${inputMessage} no es un mensaje valido`
-                    p[0].textContent = alert
-                    console.log(p)
+                    if (inputMessage.length > 0) {
+                        const alert = `${inputMessage} no es un nombre valido`
+                        p[0].textContent = alert
+                        console.log(p)
+                        p[0].style.display = 'block'
+                    } else {
+                        p[0].style.display = 'none'
+                    }
+
                 }
             }
 
