@@ -45,6 +45,7 @@
             </form>
         </div>
     </div>
+
     <script>
         // 
         // SELECCIONAR ELEMENTOS DEL DOM
@@ -64,9 +65,12 @@
                 const regExpLiteral = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
 
                 if (regExpLiteral.test(inputName)) {
-                    console.log(inputName)
+                    // document.getElementById('nombre').value = ""
+                    // document.getElementById("informacion").style.display="block";
+                    p[0].style.display = 'none'
                 } else {
                     const alert = `${inputName} no es un nombre valido`
+                    p[0].style.display = 'block'
                     p[0].textContent = alert
                     console.log(p)
                 }
