@@ -1,15 +1,7 @@
 // Crear una función para solicitar el número y validar antes de mostrar el resultado que 
 // el  número  ingresado  se  encuentre  entre  1  y  20. 
 
-const validateNumber = (num) => { 
-    if (num > 20 || num < 1) {
-        // return "Número fuera del rango"    
-        return false
-    } else {
-        // return "Número en el rango"    
-        return true
-    }
-}
+const validateNumber = num => (num > 20 || num < 1) ? false : true 
 
 const multi = (num) => {
     for (let i = 1; i <= num; i++) {
