@@ -58,4 +58,10 @@ En este proyecto se utilizó JavaScript, HTML5 y [Bootstrapt 5.2](https://getboo
 
 ---
 
+git pull  
+git status
+git add .  
+git commit -m "mensaje"
+git push
+
 ⌨️ con ❤️
