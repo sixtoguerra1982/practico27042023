@@ -4,11 +4,12 @@
 // const btnVerde = document.getElementById("btn-4");
 // const btnVerdeClaroXD = document.getElementById("btn-5");
 // const vetePurpura = document.getElementById("btn-6");
+const paletaColores = document.getElementById("caja-colores");
 const caja = document.getElementById("caja");
 
-// Delegacion de eventos, escucha el evento click en todo el document, con target accede a las propiedades de lo que toca
-// se puede encasillar en el DIV padre, pero eso implicaria agregar un id o llegar al elemento de otra forma.
-document.addEventListener("click", (event) => {
+// Delegacion de eventos, escucha el evento click en todo el document o al elemento que se limite (paletaColores).
+// con target accede a las propiedades de lo que toca.
+paletaColores.addEventListener("click", (event) => {
   console.log(event.target.style.backgroundColor);
   caja.style.backgroundColor = event.target.style.backgroundColor;
 });
