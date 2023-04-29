@@ -8,60 +8,46 @@ Este proyecto corresponde a la practica grupal del modulo 3, para el bootcamp **
 
 ## Integrantes: 😀
 
-- **Kevin Abdul Villarroel Mora**
-- **Barbara Ramos**
-- **María Jesús Díaz Salinas**
-- **Guissepe Rivera**
-- **Víctor Araya**
+- **Victor Araya**
+- **Sixto Guerra**
+- **Carolina Salas**
+- **Amancay Roman**
+- **Camila Barrientos**
 
 ## Requisitos (checklist) 📋
+Ejercicio 1:
 
-1. Realizar operaciones con dos números.
-   Pedir al usuario que ingrese dos números diferentes y mayores a cero. Para ambos números, calcular lo siguiente: ✅
-
-- Suma
-- Resta
-- División
-- Multiplicación
-- Módulo
-
-<br>
-
-2. Crear un programa que pida al usuario ingresar la temperatura en grados Celsius y que la transforme a grados Kelvin y Fahrenheit.
-
-Se debe considerar la siguiente información respecto a la equivalencia de las escalas de temperatura:
-
-- 0 Grados Celsius corresponden a 273,15 Kelvin. La fórmula para convertirlos es 0 °C + 273.15 = 273.15 K
-- 0 Grados Celsius corresponden a 32 Fahrenheit. La fórmula para convertirlos es (0 °C × 9/5) + 32 = 32 °F ✅
+1. Crear una función para solicitar el número y validar antes de mostrar el resultado que
+el número ingresado se encuentre entre 1 y 20. En caso de que no corresponda al
+rango, mostrar un mensaje al usuario: "número fuera del rango". ✅
+2. Utilizar las características propias de ES6 como let y arrow function para desarrollar
+el ejercicio. ✅
+3. Generar y mostrar por consola el resultado de las operaciones. ✅
+4. Aplicar un ciclo for anidado para obtener el factorial del número ingresado. ✅
 
 <br>
+Ejercicio 2:
 
-3. Crear un programa que pida al usuario una cantidad de días y que muestre su equivalente en Años, Semanas y Días. Por ejemplo, si el usuario ingresa 373, el resultado debe ser 1 año, 1 semana y 1 día. ✅
-
-Se debe considerar lo siguiente:
-
-- 1 año tiene 365 días
-- 1 semana tiene 7 días
-
-Se recomienda usar la función Math.floor para obtener la parte entera de un número decimal. ✅
-
+1. Desarrollar un código para validar un formulario de contacto utilizando el evento
+submit y las expresiones regulares que permitan el ingreso de caracteres desde la “Aa”
+hasta la “Z-z” mediante el método test() de JavaScript, mostrando un mensaje de
+error y/o éxito cuando corresponda. Es decir, el usuario deberá obligatoriamente
+ingresar datos en el formulario y que estos solo sean caracteres alfabéticos de la “a”
+hasta la “z” para poder enviar la información. ✅
 <br>
 
-4. Crear un programa que solicite al usuario 5 números y realice los cálculos que se piden a continuación. ✅
+2. A partir de un selector de colores, cambia el color del cuadro principal al hacer click
+sobre uno de los colores. ✅
+<br>
 
-- La suma de todos los números.
-- El promedio de los 5 números ingresados.
+3. Dar la funcionalidad de sumar y restar a la calculadora, mostrando el resultado en el
+elemento con clase resultado. Si el resultado de la resta entrega un número negativo
+debes mostrar un 0. ✅
 
 ## Recursos 📌
 
-En este proyecto se utilizó JavaScript, HTML5 y [Bootstrapt 5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+En este proyecto se utilizó JavaScript, HTML5 y manipulación del DOM.
 
 ---
-
-git pull  
-git status
-git add .  
-git commit -m "mensaje"
-git push
 
 ⌨️ con ❤️
