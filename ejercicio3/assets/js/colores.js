@@ -1,9 +1,4 @@
-// const btnRojo = document.getElementById("btn-1");
-// const btnNaranja = document.getElementById("btn-2");
-// const btnAmarillo = document.getElementById("btn-3");
-// const btnVerde = document.getElementById("btn-4");
-// const btnVerdeClaroXD = document.getElementById("btn-5");
-// const vetePurpura = document.getElementById("btn-6");
+
 const paletaColores = document.getElementById("caja-colores");
 const caja = document.getElementById("caja");
 
